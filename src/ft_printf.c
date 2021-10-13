@@ -6,7 +6,7 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 17:31:15 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/13 23:33:00 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,11 @@ static int ft_check(char c, va_list ap)
 		return(ft_check_uns(ap));
 	if (c == 'p')
 		return(ft_check_pointer(ap));
-	return (1);
+	if (c == 'x')
+		return(ft_check_hexlower(ap));
+	if (c == 'X')
+		return(ft_check_hexupper(ap));
+	return (write(1, "%", 1));
 }
 
 int	ft_printf(const char *format, ...)

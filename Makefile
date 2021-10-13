@@ -6,7 +6,7 @@
 #    By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 16:23:46 by javferna          #+#    #+#              #
-#    Updated: 2021/10/13 18:14:15 by javferna         ###   ########.fr        #
+#    Updated: 2021/10/13 23:15:35 by javferna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,12 +15,13 @@ UTILS_DIR = utils/
 INC_DIR	=	inc/
 
 SRC	=	$(addprefix $(SRC_DIR),	\
-		ft_printf.c		\
-		ft_check_char.c	\
-		ft_check_str.c	\
-		ft_check_int.c	\
-		ft_check_uns.c	\
-		ft_check_pointer.c)
+		ft_printf.c			\
+		ft_check_char.c		\
+		ft_check_str.c		\
+		ft_check_int.c		\
+		ft_check_uns.c		\
+		ft_check_pointer.c	\
+		ft_check_hex.c)
 
 UTILS	=	$(addprefix $(UTILS_DIR),	\
 		ft_strlen.c		\
