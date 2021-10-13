@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_str.c                                     :+:      :+:    :+:   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 16:59:28 by javferna         ###   ########.fr       */
+/*   Created: 2021/10/13 18:05:45 by javferna          #+#    #+#             */
+/*   Updated: 2021/10/13 18:10:06 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_check_str(va_list ap)
+int	ft_putnbr_base(unsigned long long nb, const char *base)
 {
-	char	*s;
-	int	i;
+	int					cnt;
+	int					len;
 
-	s = va_arg(ap, char *);
-	if (!s)
-		return (write(1, "(null)", 6));
-	i = 0;
-	while (s[i])
-		write(1, &s[i++], 1);
-	return (i);
+	cnt = 0;
+	len = ft_strlen(base);
+
+	if (nb >= 16)
+	{
+		cnt += ft_putnbr_base(nb / len, base);
+		cnt += ft_putchar(base[nb % len]);
+	}
+	else
+		cnt += ft_putchar(base[nb]);
+	return (cnt);
 }

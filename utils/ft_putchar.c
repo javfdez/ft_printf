@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_check_str.c                                     :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 16:59:28 by javferna         ###   ########.fr       */
+/*   Created: 2021/10/13 18:06:23 by javferna          #+#    #+#             */
+/*   Updated: 2021/10/13 18:07:15 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_check_str(va_list ap)
+int	ft_putchar(char c)
 {
-	char	*s;
-	int	i;
-
-	s = va_arg(ap, char *);
-	if (!s)
-		return (write(1, "(null)", 6));
-	i = 0;
-	while (s[i])
-		write(1, &s[i++], 1);
-	return (i);
+	return(write(1, &c, 1));
 }

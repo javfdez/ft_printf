@@ -6,7 +6,7 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 15:38:26 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/13 18:09:34 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,10 @@ int		ft_printf(const char *, ...);
 int		ft_check_char(va_list ap);
 int		ft_check_str(va_list ap);
 int		ft_check_int(va_list ap);
+int		ft_check_uns(va_list ap);
+int		ft_check_pointer(va_list ap);
 size_t	ft_strlen(const char *s);
+int		ft_putchar(char c);
+int		ft_putnbr_base(unsigned long long nb, const char *base);
 
 #endif
