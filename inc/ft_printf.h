@@ -6,7 +6,7 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 23:16:38 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/14 13:16:41 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <stdio.h>
 
-int		ft_printf(const char *, ...);
+int		ft_printf(const char *format, ...);
 int		ft_check_char(va_list ap);
 int		ft_check_str(va_list ap);
 int		ft_check_int(va_list ap);

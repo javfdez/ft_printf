@@ -6,16 +6,16 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 16:59:28 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/14 13:18:20 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <ft_printf.h>
 
 int	ft_check_str(va_list ap)
 {
 	char	*s;
-	int	i;
+	int		i;
 
 	s = va_arg(ap, char *);
 	if (!s)

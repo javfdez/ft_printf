@@ -6,13 +6,13 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 18:06:23 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 18:07:15 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/14 13:17:03 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <ft_printf.h>
 
 int	ft_putchar(char c)
 {
-	return(write(1, &c, 1));
+	return (write(1, &c, 1));
 }

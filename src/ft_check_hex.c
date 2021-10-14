@@ -6,13 +6,13 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 23:15:06 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/13 23:27:14 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/14 13:17:43 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <ft_printf.h>
 
-int		ft_check_hexlower(va_list ap)
+int	ft_check_hexlower(va_list ap)
 {
 	unsigned int	n;
 
@@ -20,7 +20,7 @@ int		ft_check_hexlower(va_list ap)
 	return (ft_putnbr_base(n, "0123456789abcdef"));
 }
 
-int		ft_check_hexupper(va_list ap)
+int	ft_check_hexupper(va_list ap)
 {
 	unsigned int	n;
 
