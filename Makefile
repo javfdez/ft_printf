@@ -6,7 +6,7 @@
 #    By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/13 16:23:46 by javferna          #+#    #+#              #
-#    Updated: 2021/10/13 23:15:35 by javferna         ###   ########.fr        #
+#    Updated: 2021/10/14 21:05:28 by javferna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ clean:
 	$(RM) $(OBJ) $(OBJ_UTILS)
 
 fclean: clean
-	$(RM) $(NAME) $(OBJ_UTILS)
+	$(RM) $(NAME)
 
 re: fclean all
 
