@@ -6,7 +6,7 @@
 /*   By: javferna <javferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 12:45:52 by javferna          #+#    #+#             */
-/*   Updated: 2021/10/14 13:19:06 by javferna         ###   ########.fr       */
+/*   Updated: 2021/10/18 11:32:48 by javferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ static int	ft_check(char c, va_list ap)
 		return (ft_check_hexlower(ap));
 	if (c == 'X')
 		return (ft_check_hexupper(ap));
-	if (c == '%')
-		return (write(1, "%", 1));
 	return (write(1, &c, 1));
 }
 
