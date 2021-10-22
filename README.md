@@ -67,6 +67,6 @@ To use the `ft_printf` function of this library it is as simple as compiling it 
 
 # Status, grade and observations
 
-- Status: The project is being evaluated.
-- Grade: Still not graded.
+- Status: Finished.
+- Grade: [![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/intra_id/project_name)](https://github.com/JaeSeoKim/badge42)
 - Observations: No bonuses were done for this project.
