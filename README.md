@@ -64,9 +64,3 @@ The [Makefile](https://github.com/Javiff8/ft_printf/blob/master/Makefile) does
 - `make re` same as doing `make fclean` followed by `make`.
 
 To use the `ft_printf` function of this library it is as simple as compiling it via `make`, then including the [ft_printf.h](https://github.com/Javiff8/ft_printf/blob/master/inc/ft_printf.h) header at the beginning of the "**.c**" files that will use the function and compiling those along with the *libftprintf.a* file.
-
-# Status, grade and observations
-
-- Status: Finished.
-- Grade: [![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/javferna/ft_printf)](https://github.com/JaeSeoKim/badge42)
-- Observations: No bonuses were done for this project.
