@@ -1,5 +1,7 @@
 # ft_printf
 
+![42 School](https://img.shields.io/badge/42%20School-Project-blue)
+
 # What is ft_printf?
 
 *ft_printf is a project that made me learn variadic functions by re-coding the printf function.*
